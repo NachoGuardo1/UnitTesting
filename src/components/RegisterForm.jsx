@@ -74,7 +74,7 @@ export const RegisterForm = () => {
   };
 
   return (
-    <Container component="main" maxWidth="sm">
+    <Container component="main" maxWidth="sm" data-testid="form-register">
       <Box
         sx={{
           display: "flex",

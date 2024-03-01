@@ -19,6 +19,7 @@ export const HeaderHome = () => {
     getCategories();
   }, []);
   const getCategories = async () => {
+    console.log(ProductsService);
     try {
       const response = await ProductsService.GET_CATEGORIES();
       dispatch({ type: "FETCH_SUCCESS", payload: response.data });
@@ -62,6 +63,7 @@ export const HeaderHome = () => {
                   color: "text.primary",
                   fontFamily: "monospace",
                 }}
+                data-testid="btn-category"
               >
                 {category}
               </Button>

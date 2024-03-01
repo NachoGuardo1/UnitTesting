@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { LoginForm } from "./components/LoginForm";
-import { RegisterForm } from "./components/RegisterForm";
+import { RegisterPage } from "./pages/RegisterPage";
 import { NavApp } from "./components/NavApp";
 import { AuthProvider } from "./contexts/AuthContext";
+import { LoginPage } from "./pages/LoginPage";
 
 function App() {
   return (
@@ -10,8 +10,8 @@ function App() {
       <AuthProvider>
         <Routes>
           <Route path="/" element={<NavApp />} />
-          <Route path="/login" element={<LoginForm />} />
-          <Route path="/register" element={<RegisterForm />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
         </Routes>
       </AuthProvider>
     </BrowserRouter>

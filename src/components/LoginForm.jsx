@@ -50,7 +50,7 @@ export const LoginForm = () => {
   };
 
   return (
-    <Container maxWidth="sm" component="main">
+    <Container maxWidth="sm" component="main" data-testid="form-login">
       <Box
         sx={{
           display: "flex",
@@ -123,6 +123,7 @@ export const LoginForm = () => {
               type="submit"
               onClick={onSubmit}
               fullWidth
+              data-testid="button-submit"
             >
               Sing In
             </Button>
