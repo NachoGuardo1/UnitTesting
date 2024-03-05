@@ -45,6 +45,7 @@ export const DrawerLinks = () => {
         aria-label="menu"
         sx={{ mr: 0.5 }}
         onClick={() => setDrawerOpen(true)}
+        data-testid="open-drawer"
       >
         <MenuIcon />
       </IconButton>
@@ -53,6 +54,7 @@ export const DrawerLinks = () => {
         variant="temporary"
         open={isDrawerOpen}
         onClose={() => setDrawerOpen(false)}
+        data-testid="drawer-links"
       >
         <List
           sx={{

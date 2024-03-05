@@ -54,6 +54,7 @@ export const SearchApp = () => {
   return (
     <>
       <TextField
+        data-testid="search-field"
         type="search"
         variant="outlined"
         value={valueSearch}
@@ -72,6 +73,7 @@ export const SearchApp = () => {
         open={menu}
         onClose={() => setMenu(false)}
         sx={{ width: "250px" }}
+        data-testid="menu-search"
       >
         {searchResults.length === 0 ? (
           <MenuItem>No options</MenuItem>
